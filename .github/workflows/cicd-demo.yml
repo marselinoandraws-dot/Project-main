@@ -1,6 +1,7 @@
-name: Simple CI/CD Demo
+name:Marselino Ayman 231001179
 
 on: [push]
+
 
 jobs:
   job1:
