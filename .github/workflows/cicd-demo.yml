@@ -1,0 +1,17 @@
+name: Simple CI/CD Demo
+
+on: [push]
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Welcome
+        run: echo "Welcome to simple CI/CD"
+
+  job2:
+    needs: job1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello
+        run: echo "Hello World"
